@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(192, 191, 190);
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .navbar {
+            height: 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        .logo {
+            width: 20%;
+        }
+
+        nav {
+            width: 70%;
+        }
+
+        nav ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav li {
+            list-style: none;
+        }
+
+        nav li a {
+            text-decoration: none;
+        }
+
+        .container {
+            height: 90%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .small {
+            height: 70%;
+            width: 70%;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .first {
+            height: 100%;
+            width: 45%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">Spring Flowers School</div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./timeTable.html">TimeTable</a></li>
+                <li><a href="./profile.html">Student Profile</a></li>
+                <li><a href="./monthlyChart.html">Monthly Chart</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="small">
+            <div class="first">
+                <label for="subject">SUBJECT</label>
+                <select name="sub" id="subject">
+                    <option value="" disabled selected>Select Subject</option>
+                    <option value="physics">PHYSICS</option>
+                    <option value="chemistry">CHEMISTRY</option>
+                    <option value="maths">MATHS</option>
+                </select>
+            </div>
+            <div class="first" id="second">
+                activity displayed here
+            </div>
+        </div>
+    </div>
+</body>
+<script src="monthlyChart.js"></script>
+
+</html>
